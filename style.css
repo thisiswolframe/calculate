@@ -1,3 +1,4 @@
-ul {
-  width: 50px  ;
+/* Здесь стилизация Страницы Главная */
+li {
+  box-sizing: content-box;
 }
