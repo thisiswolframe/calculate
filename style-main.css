@@ -1,57 +1,113 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
 }
+
 body {
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
     color: #000000;
 }
+
 header {
-    background-color:#fed801de;
+    background-color: #fed801de;
+    justify-content: space-between; 
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding:  0 249px;
     border-bottom: 1px solid #000000;
+    padding: 10px;
 }
-header ul li {
-    display: inline-block;
+
+nav {
+    flex-grow: 10; 
+}
+
+header ul.centered {
+    display: flex;
+    justify-content: center; 
     list-style: none;
-    margin: 0 30px;
+    padding: 0;
+    margin: 0;
 }
+
+header ul.centered a {
+    text-decoration: none;
+}
+
+header ul.centered li {
+    margin: 0 20px;
+}
+
 header ul li:last-child {
     margin-right: 0;
 }
-header ul li a{
+
+header ul li a {
     text-decoration: none;
-    color: #000000 ;
+    color: #000000;
     padding: 22px 0;
     display: inline-block;
     transition: all ease 0.3s;
     font-size: 18px;
 }
-header ul li a:hover{
-    color: #ffffff;
 
+/* Анимация открытия каталога */
+header ul li a:hover {
+    color: #ffffff;
 }
+
 /* Здесь функции каталога */
 header ul.submenu {
+    display: none;
     position: absolute;
     width: 200px;
-    background-color:#fed801de ;
+    background-color: #fed801de;
     box-shadow: 0 20px 45px #000000;
     margin-top: -50px;
     opacity: 0;
     z-index: -999;
     transition: all ease 0.5s;
+    list-style: none;
 }
+
 header ul li:hover .submenu {
+    display: block;
     z-index: 99;
     opacity: 1;
-    margin-top: 0;
+    margin-top: 1px;
+}
+
+/* Кнопка меню */
+.menu-toggle {
+    display: none; 
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header ul.centered {
+        display: none;
+        flex-direction: column; 
+        width: 100%; 
+        background-color: #fed801de; 
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    header ul.centered.active {
+        display: flex; 
+    }
+
+    .menu-toggle {
+        display: block; 
+    }
 }
