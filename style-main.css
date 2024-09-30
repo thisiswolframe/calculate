@@ -10,27 +10,30 @@ nav {
     background: #191a1b;
     position: fixed;
     width: 100%;
-    z-index: 99;
+    z-index: 999;
 }
 
-nav .main {
+nav .wrapper {
     position: relative;
     max-width: 1250px;
-    padding: 0 30px;
+    padding: 0 30px; 
     height: 70px;
     line-height: 70px;
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
 }
-.main .logo a{
+.wrapper .logo a{
     color: #fff;
     text-decoration: none;
     font-size: 30px;
     font-weight: 600;
 }
-.main .nav-links {
+ul .nav-links {
+    display: inline-block;
+}
+.wrapper .nav-links {
     display: inline-flex;
 }
 .nav-links li {
@@ -48,19 +51,21 @@ nav .main {
     background: #2d2d2f;
 }
 .nav-links li:hover .mega-box{
-    top: 70px;
+    top: 65px;
     opacity: 1;
     visibility: visible;
+    transition: all 0.3 ease;
   }
 /* Меню Каталога */
 .mega-box {
     position: absolute;
-    top: -100px;
+    top: 80px;
     width: 100%;
     left: 0;
-    opacity: 0;
+    padding: 0 30px;
+    opacity: 1; 
     visibility: hidden;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease ;
 }
 
 .mega-box .content {
@@ -72,30 +77,62 @@ nav .main {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 .content .row{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width:calc(25% - 30px);
+    line-height: 45px;
 }
-.row header {
+.content .row img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    align-items: center;
+}
+header {
     color: #fff;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 500;
 }
-.row .mega-links {
-    margin-left: -40px;
-    border-left: 1px solid rgba(255,255,255,0.09);
+content .row .mega-links {
+    margin-left: 40px;
+    /* border-left: 1px solid rgba(255,255,255,0.09); */
 }
 .content .row:nth-child(1),
 .content .row:nth-child(2){
     border-left: 0px;
 }
-
-.mega-links li {
+.row .mega-links li {
     padding: 0 20px;
 }
-.mega-links li a{
+.row .mega-links li a{
     padding: 0 20px;
     color:#fff ;
     font-size: 17px;
     display: block;
+}
+
+@media screen and (max-width: 970px) {
+    .wrapper .nav-links {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 350px;
+        background: #191a1b;
+        display: block;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+        line-height: 50px;
+        pad: 50px 10px;
+        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+    }
+    .nav-links li {
+        margin: 15px 10px;
+        
+    }
+    .wrapper .nav-links li a {
+       padding: 0 20px ;
+       display: block;
+       font-size: 20px;
+
+
+    }
 }
