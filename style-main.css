@@ -13,45 +13,6 @@ nav {
     z-index: 99;
 }
 /* Стилизация Поисковика */
-.search-box {
-    position: relative;
-}
-
-.search-box input {
-    width: 100%;
-    padding: 5px;
-    height: 100%;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    padding-left: 10px;
-    box-sizing: border-box;
-}
-.search-box button {
-    cursor: pointer;
-    color: #191a1b;
-    border: none;
-    outline: none;
-    position: absolute;
-    right: 0px;
-    top: 50%;
-    height: 30px;
-    width: 30px;
-    transform: translateY(-52%);
-    background: transparent;
-}
-
-.search-box button:hover{
-    cursor: pointer;
-    color: #fff;
-    background:#191a1b;
-    transition: all 0.3s ease;
-}
-
-.search-box button i {
-    font-size: 20px;
-}
-
 nav .wrapper {
     position: relative;
     max-width: 1300px;
