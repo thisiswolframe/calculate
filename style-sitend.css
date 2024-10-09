@@ -9,11 +9,9 @@ footer {
 }
 .main-content {
     display: flex;
-}
-.main-content .box{
     flex-basis: 50%;
-    padding: 10px 20px;
-  }
+    padding: 10px 20px ;
+}
 .box h2{
     font-size: 1.125rem;
     font-weight: 600;
@@ -21,25 +19,6 @@ footer {
   }
 .box .contentum{
     margin: 20px 0 0 0;
-}
-.box .contentum:before{
-    position: absolute;
-    content: '';
-    top: 50px;
-    height: 2px;
-    width: 100%;
-    background: #000000;
-}
-.box .contentum:after{
-    position: absolute;
-    content: '';
-    height: 2px;
-    width: 15%;
-    background: #f12020;
-    top: 50px;
-}
-.left-box{
-    margin-left: 50px;
 }
 .left-box h2{
     font-size: 1.125rem;
@@ -68,11 +47,14 @@ footer {
 .social a span:hover{
     background: #88bd24;
   }
+  .center {
+    margin: 0 25px;
+  }
 .center .contentum .fas {
       font-size: 1.4375rem;
       background: #2d2d2d;
       height:45px;
-      width: 45px;
+      width:45px;
       line-height: 45px;
       text-align: center;
       border-radius: 50%;
@@ -85,7 +67,6 @@ footer {
 .center .contentum .text {
         font-size: 1.0625rem;
         font-weight: 400;
-        padding-left: 10px;
     }
 .center .contentum .phone {
        margin: 10px 0; 

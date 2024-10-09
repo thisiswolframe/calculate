@@ -6,21 +6,23 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+body {
+    background: #000;
+}
 nav {
     background:  #191a1b;
     position: fixed;
     width: 100%;
     z-index: 99;
 }
-/* Стилизация Поисковика */
 nav .wrapper {
     position: relative;
     max-width: 1300px;
     padding: 0px 30px; 
+    display: flex;
     height: 70px;
     line-height: 70px;
     margin: auto;
-    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -31,7 +33,7 @@ nav .wrapper {
     font-weight: 600;
 }
 .wrapper .nav-links {
-    display: inline-flex;
+    display:inline-flex;
 }
 .nav-links li {
     list-style: none;
@@ -45,6 +47,7 @@ nav .wrapper {
     transition: all ease 0.3s;
 }
 .nav-links li a:hover {
+    width: 150px;
     background: #2d2d2f;
 }
 .nav-links .mobile-item{
@@ -54,60 +57,15 @@ nav .wrapper {
     top: 70px;
     opacity: 1;
     visibility: visible;
-    transition: all 0.3 ease;
+    transition: all 0.1s ease;
   }
 /* Меню Каталога */
-.mega-box {
-    position: absolute;
-    top: 80px;
-    width: 100%;
-    left: 0;
-    padding: 0 40px;
-    opacity: 1; 
-    visibility: hidden;
-    transition: all 0.3s ease ;
-}
 
-.mega-box .content {
-    background: #191a1b;
-    padding: 25px 20px;
-    display: flex;
-    width: 100%;
-    justify-content:calc(30% - 20px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-.content .row{
-    width:calc(25% - 30px);
-    line-height: 45px;
-}
-.content .row img {
-    width: 20rem;
-    height: 20rem;
-    object-fit: cover;
-    align-items: center;
-}
-header {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-}
-content .row .mega-links {
-    margin-left: 40px;
-    border-left: 1px solid rgba(255,255,255,0.09);
-}
-.mega-box .content .row:nth-child(1),
-.mega-box .content .row:nth-child(2){
-    border-top: 0px;
-}
-.row .mega-links li {
-    padding: 0 20px;
-}
-.row .mega-links li a{
-    padding: 0 20px;
-    color:#fff ;
-    font-size: 17px;
-    display: block;
-}
+
+
+
+
+/* Кнопки меню и закрыть */
 .nav-links .mobile-item{
     display: none;
 }
@@ -123,17 +81,19 @@ content .row .mega-links {
     top: 10px;
 }
 
-
+/* Натсройка разрешения а также ширины экрана для мобильных устройств */
 @media screen and (max-width: 970px) {
     .wrapper .btn {
-
         display:block ;
+    }
+    .wrapper .cancel-btn {
+        padding: 0 300px;
     }
     .wrapper .nav-links {
         position: fixed;
         height: 100vh; 
         width: 100%;
-        max-width: 350px;
+        max-width: 360px;
         background: #191a1b;
         display: block;
         top: 0;      
@@ -186,11 +146,15 @@ content .row .mega-links {
         transition: all 0.3s ease;
     }
     .nav-links .mobile-item:hover{
+        width: 150px;
         background: #2d2d2f;
     }
     .nav-links .mobile-item ul{
         padding-right: 25px;
     }
+
+
+
     /* Меню для устройств с узким экраном  */
     .nav-links .mega-box {
         position: static;
