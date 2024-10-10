@@ -6,9 +6,8 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-html, body {
+body {
     background: #000;
-    height: 100%;
 }
 nav {
     background:  #191a1b;
@@ -49,24 +48,39 @@ nav .wrapper {
     transition: all ease 0.3s;
 }
 .nav-links li a:hover {
-    width: 150px;
+    width: 180px;
     background: #2d2d2f;
 }
 .nav-links .mobile-item{
     display: none;
   }
-.nav-links li:hover .mega-box{
-    top: 70px;
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.1s ease;
-  }
-/* Меню Каталога */
 
-
-
-
-
+  /* Меню Каталога */
+.nav-links .drop-menu {
+      background: #191a1b;
+      width: 240px;
+      top: 65px;
+      line-height: 45px;
+      position: absolute;
+      visibility: hidden;
+    }
+.nav-links li:hover .drop-menu{
+        top: 65px;
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.3s ease;
+      }
+.nav-links .drop-menu 
+.drop-menu li a{
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+    font-weight: 400;
+}
+li .acessories {
+    background: #191a1b;
+    padding-left: 50px;
+}
 /* Кнопки меню и закрыть */
 .nav-links .mobile-item{
     display: none;
@@ -132,7 +146,7 @@ nav .wrapper {
        display: block;
        font-size: 20px;
     }
-    #showMega:checked ~ .mega-box{
+    #showMega:checked ~ .drop-menu{
         max-height:  100%; ;
     }
     .nav-links .desktop-item{
@@ -158,7 +172,7 @@ nav .wrapper {
 
 
     /* Меню для устройств с узким экраном  */
-    .nav-links .mega-box {
+    .nav-links .drop-menu {
         position: static;
         top: 65px;
         opacity: 1;
@@ -168,17 +182,17 @@ nav .wrapper {
         overflow: hidden;
         transition: all ease 0.3s;
     }
-    .mega-box .content {
+    .drop-menu .content {
         box-shadow: none;
         flex-direction: column;
         padding-right: 50px;
     }
-    .mega-box .content .row {
+    .drop-menu .content .row {
         width: 100%;
         margin-bottom: 15px;
     }
-    .mega-box .content .row:nth-child(1),
-    .mega-box .content .row:nth-child(2){
+    .drop-menu .content .row:nth-child(1),
+    .drop-menu .content .row:nth-child(2){
       border-top: 0px;
     }
     .content .row .mega-links{
