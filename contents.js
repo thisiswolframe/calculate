@@ -1,3 +1,4 @@
+// СКРИПТ СЛАЙДЕРА ЧТОБЫ ПРИ НАЖАТИИ НА КРУГЛЫЕ КНОПКИ СТРАНИЦА НЕ СКРОЛЛИЛАСЬ
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.slider-nav a').forEach((link, index) => {
         link.addEventListener('click', (e) => {

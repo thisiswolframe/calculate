@@ -22,7 +22,7 @@ footer {
     font-size: 1.125rem;
     font-weight: 600;
     text-transform: uppercase;
-  }
+}
 .box .contentum{
     margin: 20px 0 0 0;
 }
@@ -58,22 +58,17 @@ footer {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 25rem;
     background: #2d2d2d;
 }
 .left-box .contentum .makers img {
     margin: 10px;
     height: 36px;
 }
-#maker-5 {
-    color: #fff;
-}
-.left-box .contentum .makers img:hover {
-    background: #444343;
-}
 .social a span:hover{
     background: #88bd24;
   }
-  .center {
+.center {
     margin: 0 25px;
   }
 .center .contentum .fas {
@@ -95,8 +90,11 @@ footer {
         font-weight: 400;
     }
 .center .contentum .phone {
-       margin: 10px 0; 
+       margin: 20px 0; 
     }
+.center .contentum {
+    width: 350px;
+}
 .right  form .text {
         font-size:1.0625rem;
         margin-bottom: 2px;

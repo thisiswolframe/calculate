@@ -1,10 +1,16 @@
 .container {
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    max-width: 100%;
+    margin: 0 auto; 
 }
 html::-webkit-scrollbar{
     width: 0;
 }
 .slider-wrapper {
+    width: 100%;
     margin-top: 5rem;
     position: relative;
     max-width: 50rem;
@@ -46,4 +52,103 @@ html::-webkit-scrollbar{
 .slider-nav a:hover{
     background: #88bd24;
     opacity: 1;
+}
+
+/* Товары по акции */
+.skidki {
+    background: #fff;
+    width: 44.5rem;
+    height: 4rem;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    color: #000;
+}
+.card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 10px;
+    text-align: center;
+    width: 20rem;
+    height: 20rem;
+}
+.card img {
+    width: 10rem;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.card p {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+    padding-bottom:15px ;
+}
+.del{
+    color: #000;
+    background: #88bd24;
+    padding: 10px;
+    font-weight: 600;
+}
+.price {
+    font-size: 16px;
+    color: #fff;
+    background: #2d2d2d;
+    padding: 10px;
+    font-weight: 600;
+}
+.price:hover {
+    background: #88bd24;
+}
+@media (min-width: 970px) {
+    .container {
+    flex-direction: row; /* Размещаем элементы в строку */
+    justify-content: space-between; /* Добавляем промежуток между слайдером и карточкой */
+    align-items: flex-start; /* Выровняем по верхнему краю */
+    }
+    .slidder img{
+    width: 10rem;
+    }
+    .card {
+    width: 20rem;
+    height: 22rem;
+    margin-top:1rem ;
+    flex: 1; 
+    align-self: flex-start;
+    }
+    .skidki {
+        background: #fff;
+        width: 20rem;
+        height: 5rem;
+        padding: 25px;
+        text-align: center;
+        margin-top: 5rem;
+        border-radius: 0.5rem;
+        color: #000;
+    }
+    .card img {
+        width: 13rem;
+    }
+    .card h2 {
+        font-size: 1.5em;
+        margin: 0;
+        color: #000000;
+    }
+    .del{
+        color: #000;
+        background: #88bd24;
+        padding: 8px;
+        font-weight: 600;
+    }
+    .price {
+        color: #fff;
+        background: #2d2d2d;
+        padding: 8px;
+        font-weight: 600;
+    }
 }
