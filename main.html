@@ -9,8 +9,7 @@
         <link rel="stylesheet" href="style-centerbody.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <link rel="shortcut icon" href="Безымянный-2.png" type="image/x-icon">
-        <script src="contents.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>    
+        <script src="contents.js"></script>    
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
@@ -29,57 +28,57 @@
                     <a href="catalog.html" class="desktop-item" target="_blank">Каталог</a>
                         <ul class="drop-menu">
                             <li>
-                                <a href="#"><span>Комплектующие</span></a>
-                                <i class="fa-solid fa-chevron-down"></i>
-                                <li class="acessories">
-                                    <li><a href="#">Материнские плата</a></li>
-                                    <li><a href="#">Процессоры</a></li>
-                                    <li><a href="#">Видеокарты</a></li>
-                                    <li><a href="#">Жесткие диски и SSD диски</a></li>
-                                    <li><a href="#">Системы охлаждения</a></li>
-                                    <li><a href="#">Блоки питания</a></li>
-                                    <li><a href="#">Системные блоки</a></li>
-                                </li>
+                                <a class="complect" href="#">Комплектующие</a>
+                                <ul>
+                                    <a href="#">Материнские платы</a>
+                                    <a href="#">Процессоры</a>
+                                    <a href="#">Видеокарты</a>
+                                    <a href="#">Жесткие диски и SSD диски</a>
+                                    <a href="#">Системы охлаждения</a>
+                                    <a href="#">Блоки питания</a>
+                                    <a href="#">Системные блоки</a>
+                                </ul>
                             </li>
-                            <li><a href="#">Периферия</a></li>
+                            <li>
+                                <a href="#">Периферия</a>
+                                <ul>
+                                    <a href="#">Мониторы</a>
+                                    <a href="#">Мышки</a>
+                                    <a href="#">Клавиатуры</a>
+                                    <a href="#">Наушники</a>
+                                    <a href="#">Коврики для мышки</a>
+                                    <a href="#">Веб камеры</a>
+                                </ul>
+                            </li>
                         </ul>
-                        <label for="showMega" class="mobile-item" target="_blank">Каталог</label>
+                </li>
+                    <li>
+                        <a href="main-content">О нас</a>
                     </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <li><a href="main-content">О нас</a></li>
-                </ul>
+            </ul>
                 <label for="menu-btn" class="btn menu-btn"><i class="ri-menu-fill"></i></i></label>
             </div>
             </nav>
-            <div class="center-content">
-                <div class="container">
+            <section class="container">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slider-1" src="corp.png" alt="img">
+                        <img id="slider-2" src="motherboard.png" alt="img">
+                        <img id="slider-3" src="motherboard-2.png" alt="img">
+                        <img id="slider-4" src="videocard.png" alt="img">
+                        <img id="slider-5" src="diskum.png" alt="img">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slider-1"></a>
+                        <a href="#slider-2"></a>
+                        <a href="#slider-3"></a>
+                        <a href="#slider-4"></a>
+                        <a href="#slider-5"></a>
+                    </div>
                 </div>
-            </div>
+            </section>
     <footer>
-     <div class="main-content">
+    <div class="main-content">
                     <div class="left-box">
                         <h2>О Нас</h2>
                         <div class="contentum">
@@ -89,6 +88,14 @@
                                 <a href="#"><span class="fab fa-twitter"></span></a>
                                 <a href="#"><span class="fab fa-instagram"></span></a>
                                 <a href="#"><span class="fab fa-youtube"></span></a>
+                            </div>
+                            <h2>Производелители</h2>
+                            <div class="makers">
+                                <img src="ASUS.png" alt="image">
+                                <img src="gigabyte.png" alt="image">
+                                <img src="MSI.png" alt="image">
+                                <img src="Intel.png" alt="image">
+                                <img id="maker-5" src="AMD.png" alt="image">
                             </div>
                         </div>
                     </div>

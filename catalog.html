@@ -6,20 +6,60 @@
     <title>Каталог</title>
     <link rel="stylesheet" href="style-catalog(card).css">
     <link rel="stylesheet" href="style-main.css">
+    <link rel="stylesheet" href="style-sitend.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <link rel="shortcut icon" href="Безымянный-2.png" type="image/x-icon">
-    <script src="all-content.js"></script>
+    <script src="contents.js"></script>
 </head>
 <body>
     <nav>
         <div class="wrapper">
-                <div class="logo"><a href="#">Technosale</a></div>
-                <ul class="nav-links">
-                    <li><a href="main.html" target="_blank">Главная</a></li>
-                    <li><a href="#">О нас</a></li>
-                </ul>
-        </div> 
-    </nav>
+            <div class="logo"><a href="main.html">Technosale</a></div>
+        </form>
+        <input type="radio" name="slider" id="menu-btn">
+        <input type="radio" name="slider" id="cancel-btn">
+        <ul class="nav-links">
+            <label for="cancel-btn" class="btn cancel-btn"><i class="ri-close-large-line"></i></i></label>
+            <li>
+                <a href="main.html" target="_blank">Главная</a>
+            </li>
+            <li>
+                <a href="catalog.html" class="desktop-item" target="_blank">Каталог</a>
+                    <ul class="drop-menu">
+                        <li>
+                            <a class="complect" href="#">Комплектующие</a>
+                            <ul>
+                                <a href="#">Материнские платы</a>
+                                <a href="#">Процессоры</a>
+                                <a href="#">Видеокарты</a>
+                                <a href="#">Жесткие диски и SSD диски</a>
+                                <a href="#">Системы охлаждения</a>
+                                <a href="#">Блоки питания</a>
+                                <a href="#">Системные блоки</a>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Периферия</a>
+                            <ul>
+                                <a href="#">Мониторы</a>
+                                <a href="#">Мышки</a>
+                                <a href="#">Клавиатуры</a>
+                                <a href="#">Наушники</a>
+                                <a href="#">Коврики для мышки</a>
+                                <a href="#">Веб камеры</a>
+                            </ul>
+                        </li>
+                    </ul>
+            </li>
+            <ul>
+                <li>
+                    <a href="main-content">О нас</a>
+                </li>
+            </ul>
+        </ul>
+            <label for="menu-btn" class="btn menu-btn"><i class="ri-menu-fill"></i></i></label>
+        </div>
+        </nav>
     <div class="container"></div>
         <div class="card">
             <img src="https://via.placeholder.com/150" alt="Товар 1">
@@ -52,5 +92,63 @@
             <span class="price">₽5000</span>
         </div>
     </div>
+    <footer>
+        <div class="main-content">
+                       <div class="left-box">
+                           <h2>О Нас</h2>
+                           <div class="contentum">
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ratione voluptatem quas iusto ipsam. Optio temporibus omnis quasi corrupti necessitatibus delectus dignissimos, repellat repudiandae sequi, animi deserunt. Sed, iusto pariatur?</p>
+                               <div class="social">
+                                   <a href="#"><span class="fab fa-facebook-f"></span></a>
+                                   <a href="#"><span class="fab fa-twitter"></span></a>
+                                   <a href="#"><span class="fab fa-instagram"></span></a>
+                                   <a href="#"><span class="fab fa-youtube"></span></a>
+                               </div>
+                           </div>
+                       </div>
+   
+               <div class="center box">
+                   <h2>Адрес</h2>
+                   <div class="contentum">
+                       <div class="place">
+                           <span class="fas fa-map-marker-alt"></span>
+                           <span class="text">Кыргызстан, Бишкек</span>
+                       </div>
+                       <div class="phone">
+                           <span class="fas fa-phone-alt"></span>
+                           <span class="text">+996 780 352 344</span>
+                       </div>    
+                       <div class="email">
+                           <span class="fas fa-envelope"></span>
+                           <span class="text">tecnosalekg@gmail.com</span>
+                       </div>    
+                   </div>
+               </div>
+               <div class="right box">
+                   <h2>Связаться с нами</h2>
+                   <div class="contentum">
+                       <form action="#">
+                           <div class="email">
+                               <div class="text">Email *</div>
+                               <input type="email" required>
+                           </div>
+                           <div class="msg">
+                               <div class="text">Сообщение *</div>
+                               <textarea rows="2" cols="25" required></textarea>
+                           </div>
+                           <div class="btn2">
+                               <button type="">Отправить</button>
+                           </div>
+                       </form>
+                   </div>
+               </div>
+       </div>
+           <div class="botton">
+               <center>
+                   <span class="credit">Создано <a href="#">Technosale</a></span>
+                   <span class="far fa-copyright"></span><span> 2024 Все права защищены.</span>
+               </center>
+           </div>
+       </footer>
 </body>
 </html>
