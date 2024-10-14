@@ -57,7 +57,7 @@ html::-webkit-scrollbar{
 /* Товары по акции */
 .skidki {
     background: #fff;
-    width: 44.5rem;
+    width: 50rem;
     height: 4rem;
     padding: 15px;
     text-align: center;
@@ -70,7 +70,7 @@ html::-webkit-scrollbar{
     border-radius: 0.5rem;
     padding: 10px;
     text-align: center;
-    width: 20rem;
+    width: 22rem;
     height: 20rem;
 }
 .card img {
