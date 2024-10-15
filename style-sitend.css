@@ -60,6 +60,7 @@ footer {
     flex-wrap: wrap;
     width: 25rem;
     background: #2d2d2d;
+    color: var(--header-text);
 }
 .left-box .contentum .makers img {
     margin: 10px;

@@ -57,7 +57,7 @@ html::-webkit-scrollbar{
 /* Товары по акции */
 .skidki {
     background: #fff;
-    width: 50rem;
+    width: 100%;
     height: 4rem;
     padding: 15px;
     text-align: center;
@@ -70,7 +70,7 @@ html::-webkit-scrollbar{
     border-radius: 0.5rem;
     padding: 10px;
     text-align: center;
-    width: 22rem;
+    width: 100%;
     height: 20rem;
 }
 .card img {
@@ -98,12 +98,14 @@ html::-webkit-scrollbar{
 .price {
     font-size: 16px;
     color: #fff;
-    background: #2d2d2d;
+    background: #88bd24;
     padding: 10px;
     font-weight: 600;
 }
 .price:hover {
-    background: #88bd24;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #2d2d2d;
 }
 @media (min-width: 970px) {
     .container {
@@ -147,7 +149,7 @@ html::-webkit-scrollbar{
     }
     .price {
         color: #fff;
-        background: #2d2d2d;
+        background: #88bd24;
         padding: 8px;
         font-weight: 600;
     }

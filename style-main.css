@@ -44,13 +44,13 @@ nav .wrapper {
 .nav-links li a {
     color: #fff;
     text-decoration: none;
+    width: 200px;
     font-size: 18px;
     font-weight: 500;
     padding: 9px 15px;
     transition: all ease 0.3s;
 }
 .nav-links li a:hover {
-    width: 180px;
     background: #2d2d2f;
 }
 .nav-links .mobile-item{
@@ -61,7 +61,7 @@ nav .wrapper {
 .nav-links .drop-menu {
     background: #191a1b;
     top: 70px;
-    right: 70px;
+    right: 120px;
     line-height: 45px;
     position: absolute;
     visibility: hidden;
@@ -81,8 +81,8 @@ nav .wrapper {
 }
 .drop-menu ul {
   position: absolute;
+  top: 0;
   left: 100%;
-  top: 0px;
   display: none;
   padding: 0;
 }

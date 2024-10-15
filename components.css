@@ -1,60 +1,58 @@
 div .sections {
     display:flex;
-    flex-wrap:nowrap;
     position: relative;
+    justify-content: space-between; 
+    flex-wrap: wrap;
     top: 7.5rem;
     margin: 0 5rem 0 5rem;
     padding-bottom: 10rem;
 }
 .compl {
     background: #fff;
-    margin: 0 auto;
+    margin-bottom: 2rem;
     padding: 1rem;
     border-radius: 1rem;
+    width: calc(33.33% - 2rem);
 }
-#compl {
-    height: 12rem;
-    width: 100%;
-}
-#prf {
+#alls{
+    padding-left: 5rem;
     height: 15rem;
-    margin-bottom: 2rem;
-    width: 100%;
 }
-.set{
+.textum{
     background: #88bd24;
     text-decoration: none;
+    color: #000;
     font-weight: 600;
     padding: 0.5rem;
-    margin-left:5rem;
     display: flex; 
     justify-content: center;
 }
-.set:hover {
-    color: #fff;
+.textum:hover {
     background: #2d2d2d;
+    color: #fff;
 }
 
 @media (max-width:970px) {
     div .sections {
         flex-direction: column;
+        padding-bottom: 10rem;
     }
     .compl {
-        margin-bottom: 1rem;
-        width: 40rem;
+        width: 100%;
     }
-    }
-    #compl {
+    #alls {
         height: 24rem;
     }
-    #prf {
-        height: 22rem;
+    #compl{
+        padding-left: 10rem;
+        height: 16rem;
     }
-    .set{
+    .textum{
         background: #88bd24;
         text-decoration: none;
         color: #000;
         font-weight: 600;
         padding: 0.5rem;
         margin: 0 auto; 
+    }
     }

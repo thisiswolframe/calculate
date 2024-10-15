@@ -1,0 +1,72 @@
+.motherboards {
+    display: flex;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    top: 6rem;
+    left: 2rem;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    margin-bottom: 30rem;
+    border-radius: 0.5rem;
+    color: #000;
+}
+.motherboards::-webkit-scrollbar {
+    display: none;
+}
+.cards {
+    width: calc(25.33% - 2.75rem);
+    background-color: #fff;
+    border-radius: 0.5rem;
+    margin-bottom: 50px;
+    padding: 10px;
+    text-align: center;
+    height: 30rem;
+}
+.cards img {
+    width: 18rem;
+}
+.cards h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.cards p {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+    padding-bottom:15px ;
+}
+.price {
+    color: #000;
+    text-decoration: none;
+    background: #88bd24;
+    padding: 10px;
+    font-weight: 400;
+    cursor:auto;
+}
+.cup {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    background: #88bd24;
+    padding: 10px;
+    font-weight: 600;
+}
+.cup:hover {
+    background: #2d2d2d;
+    color: #fff;
+}
+@media (max-width:970px) {
+    .motherboards {
+        flex-direction: column;
+    }
+    .motherboards::-webkit-scrollbar {
+        display: none;
+    }
+    .cards {
+        width: 40rem;
+        margin-bottom: 50px;
+    }
+}
